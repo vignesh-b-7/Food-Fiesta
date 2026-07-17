@@ -1,0 +1,173 @@
+.dp-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-white);
+  border: 1px solid var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.dp-status-bar__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.dp-status-bar__label {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.dp-status-bar__hint {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+}
+
+/* ---- Active delivery ---- */
+.dp-active-card {
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.dp-active-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-4);
+}
+
+.dp-active-card__restaurant {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.dp-active-card__id {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+}
+
+.dp-route {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.dp-route__point {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.dp-route__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.dp-route__dot--pickup {
+  background: var(--color-accent);
+}
+
+.dp-route__dot--drop {
+  background: var(--color-primary);
+}
+
+.dp-route__label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.dp-route__value {
+  font-size: 13.5px;
+}
+
+.dp-route__line {
+  width: 2px;
+  height: 20px;
+  background: repeating-linear-gradient(0deg, var(--color-text-muted) 0 4px, transparent 4px 8px);
+  margin-left: 5px;
+}
+
+/* ---- Requests ---- */
+.dp-request-card {
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dp-request-card__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dp-request-card__restaurant {
+  font-weight: 700;
+  font-size: 14.5px;
+}
+
+.dp-request-card__address {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+}
+
+.dp-request-card__actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* ---- Earnings ---- */
+.dp-earnings-hero {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.dp-earnings-hero__value {
+  font-family: var(--font-heading);
+  font-size: 40px;
+}
+
+.dp-earnings-hero__label {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+.dp-earnings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-4);
+}
+
+.dp-earnings-card {
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.dp-earnings-card__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.dp-earnings-card__label {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: food-fiesta-backend
+  jackson:
+    default-property-inclusion: non_null
+
+logging:
+  level:
+    com.foodfiesta: INFO
+
+foodfiesta:
+  cors:
+    allowed-origins: http://localhost:5173
